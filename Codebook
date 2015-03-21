@@ -1,0 +1,27 @@
+Code Book
+
+x_test - x test data
+y_test - y test data
+
+x_train - x training data
+y_train - y training data
+
+combined - the commbination of all variables listed above (x in 1st column, y in second column)
+
+stdevcount - row numbers of standard dev values in combined data
+meancount - row numbers of mean values in combined data
+
+stdevcols - retriving the data from the original combined data using the row indexes above
+
+meanFreq_cols - row numbers for "meanFreq"in combined data
+meancols - retrieves data from orginal combined data for everything not containing "meanFreq"
+
+data - combines four variables into a viable data set
+
+fake - finds first row in data that fits the current subject and activity label
+
+vector - finds the mean of the fake vector
+
+new_vector - creates a new vector containing the corresponding subject, activity level, and mean stored in vector
+
+tidy_data - adds new_vector to the data set as the loop progresses
